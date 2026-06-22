@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://hainiya16.github.io/hainiya-portfolio/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://hainiya16.github.io/hainiya-portfolio/about.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hainiya16.github.io/hainiya-portfolio/skills.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hainiya16.github.io/hainiya-portfolio/resume.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hainiya16.github.io/hainiya-portfolio/project.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hainiya16.github.io/hainiya-portfolio/contect.html</loc>
+    <priority>0.7</priority>
+  </url>
+</urlset>

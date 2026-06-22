@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hainiya16.github.io/hainiya-portfolio/sitemap.xml
