@@ -97,7 +97,7 @@ if (canvas) {
 
       ctx.beginPath();
       ctx.arc(point.x, point.y, point.r, 0, Math.PI * 2);
-      ctx.fillStyle = index % 3 === 0 ? "rgba(232, 93, 79, 0.55)" : "rgba(8, 127, 140, 0.45)";
+      ctx.fillStyle = index % 3 === 0 ? "rgba(255, 112, 127, 0.62)" : "rgba(56, 214, 201, 0.54)";
       ctx.fill();
 
       for (let next = index + 1; next < points.length; next += 1) {
@@ -108,7 +108,7 @@ if (canvas) {
           ctx.beginPath();
           ctx.moveTo(point.x, point.y);
           ctx.lineTo(other.x, other.y);
-          ctx.strokeStyle = `rgba(17, 24, 39, ${0.11 - distance / 1500})`;
+          ctx.strokeStyle = `rgba(232, 240, 255, ${0.12 - distance / 1600})`;
           ctx.lineWidth = 1;
           ctx.stroke();
         }
