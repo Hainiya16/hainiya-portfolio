@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>N.D.F Hainiya | Software Engineering Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="N.D.F Hainiya home">
+      <span class="brand-mark">NH</span>
+      <span>N.D.F Hainiya</span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="resume.html">Resume</a>
+      <a href="project.html">Projects</a>
+      <a href="contect.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <canvas id="heroCanvas" aria-hidden="true"></canvas>
+      <div class="hero-content">
+        <p class="eyebrow">Software Engineering Student</p>
+        <h1>Nilafdeen Fathima Hainiya</h1>
+        <p class="hero-text">
+          Motivated software engineering student focused on web development,
+          Flutter mobile applications, database systems, UI/UX design, and
+          practical digital solutions.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="resume.html">View Resume</a>
+          <a class="btn secondary" href="contect.html">Contact Me</a>
+        </div>
+        <div class="hero-meta" aria-label="Contact quick links">
+          <a href="tel:+94779064148">0779064148</a>
+          <a href="mailto:hainiya77@gmail.com">hainiya77@gmail.com</a>
+          <span>Hainiya 07</span>
+          <span>Sri Lanka</span>
+        </div>
+        <div class="hero-highlights" aria-label="Portfolio focus areas">
+          <span>
+            <strong>Web</strong>
+            <small>Responsive UI</small>
+          </span>
+          <span>
+            <strong>Mobile</strong>
+            <small>Flutter Apps</small>
+          </span>
+          <span>
+            <strong>Data</strong>
+            <small>Firebase + MySQL</small>
+          </span>
+        </div>
+      </div>
+
+      <aside class="profile-panel" aria-label="Profile highlight">
+        <div class="profile-orbit">
+          <div class="profile-avatar" aria-hidden="true">
+            <svg class="girl-icon" viewBox="0 0 120 120" role="img" aria-label="Girl profile icon">
+              <circle class="icon-bg" cx="60" cy="60" r="54" />
+              <path class="icon-hijab" d="M26 92c5-28 10-58 34-58s29 30 34 58c-7 9-19 15-34 15S33 101 26 92Z" />
+              <circle class="icon-face" cx="60" cy="60" r="25" />
+              <path class="icon-scarf" d="M37 86c10 9 36 9 46 0 0 18-8 26-23 26S37 104 37 86Z" />
+              <circle class="icon-eye" cx="51" cy="59" r="3" />
+              <circle class="icon-eye" cx="69" cy="59" r="3" />
+              <path class="icon-smile" d="M52 71c5 5 11 5 16 0" />
+            </svg>
+          </div>
+        </div>
+        <div>
+          <p class="profile-label">Portfolio Profile</p>
+          <p class="profile-title">Web Development, Flutter Apps, Firebase, and UI/UX Design</p>
+          <div class="profile-tags" aria-label="Core strengths">
+            <span>Clean UI</span>
+            <span>Fast Learner</span>
+            <span>Teamwork</span>
+          </div>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> N.D.F Hainiya. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

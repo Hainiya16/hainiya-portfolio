@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume | N.D.F Hainiya</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="N.D.F Hainiya home">
+      <span class="brand-mark">NH</span>
+      <span>N.D.F Hainiya</span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="resume.html">Resume</a>
+      <a href="project.html">Projects</a>
+      <a href="contect.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <section class="section resume-section">
+      <div class="section-heading">
+        <p class="eyebrow">Resume</p>
+        <h2>Education, strengths, and professional direction.</h2>
+      </div>
+
+      <div class="resume-layout">
+        <article class="resume-card summary-card">
+          <h3>Professional Summary</h3>
+          <p>
+            Motivated and detail-oriented Software Engineering student with
+            knowledge in web development, Flutter mobile application development,
+            and database management. Passionate about creating user-friendly and
+            responsive applications using modern technologies. Skilled in
+            problem-solving, teamwork, and learning new technologies quickly.
+            Interested in software development, UI/UX design, and innovative
+            digital solutions.
+          </p>
+        </article>
+
+        <article class="resume-card education-card">
+          <h3>Education</h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <span>2023 - 2026</span>
+              <h4>ICST University</h4>
+              <p>Bachelor's in Applied IT (Reading)</p>
+            </div>
+            <div class="timeline-item">
+              <span>2025 - 2027</span>
+              <h4>Cisco Networking Academy</h4>
+              <p>Information Technology Skills Program</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="resume-card interests-card">
+          <h3>Interests</h3>
+          <div class="interest-list">
+            <span>Software Engineering</span>
+            <span>Mobile App Development</span>
+            <span>Web Development</span>
+            <span>UI/UX Designing</span>
+            <span>Artificial Intelligence Technologies</span>
+          </div>
+        </article>
+
+        <article class="resume-card resume-file-card">
+          <div class="resume-file-header">
+            <div class="resume-file-icon" aria-hidden="true">
+              <span>PDF</span>
+            </div>
+            <div>
+              <p class="resume-file-label">Official Resume</p>
+              <h3>NILAFDEEN_FATHIMA_HAINIYA</h3>
+              <p>Open the resume in a new tab or download a copy for review.</p>
+            </div>
+          </div>
+
+          <div class="resume-actions">
+            <button class="btn primary resume-view-btn" type="button" data-resume="NILAFDEEN_FATHIMA_HAINIYA_Resume.pdf">View Resume</button>
+            <a class="btn secondary" href="NILAFDEEN_FATHIMA_HAINIYA_Resume.pdf" download>Download PDF</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <div class="resume-modal" id="resumeModal" aria-hidden="true">
+    <div class="resume-modal-backdrop" data-close-resume></div>
+    <section class="resume-modal-panel" role="dialog" aria-modal="true" aria-labelledby="resumeModalTitle">
+      <div class="resume-modal-header">
+        <div>
+          <p class="resume-file-label">Resume Preview</p>
+          <h2 id="resumeModalTitle">NILAFDEEN_FATHIMA_HAINIYA</h2>
+        </div>
+        <button class="resume-close-btn" type="button" aria-label="Close resume preview" data-close-resume>Close</button>
+      </div>
+      <iframe class="resume-preview" title="NILAFDEEN FATHIMA HAINIYA Resume preview"></iframe>
+    </section>
+  </div>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> N.D.F Hainiya. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
