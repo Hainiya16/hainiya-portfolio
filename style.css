@@ -367,7 +367,8 @@ h3 {
 .profile-orbit {
   display: grid;
   place-items: center;
-  aspect-ratio: 1;
+  aspect-ratio: 4 / 3;
+  padding: 14px;
   border-radius: 8px;
   background:
     linear-gradient(135deg, rgba(92, 184, 255, 0.14), transparent 48%),
@@ -379,65 +380,22 @@ h3 {
 .profile-avatar {
   display: grid;
   place-items: center;
-  width: 62%;
-  aspect-ratio: 1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
   border-radius: 8px;
-  background: #f8fbff;
-  border: 5px solid rgba(232, 240, 255, 0.72);
+  background: var(--surface-strong);
+  border: 1px solid rgba(232, 240, 255, 0.32);
   box-shadow: 0 18px 45px rgba(0, 0, 0, 0.32);
 }
 
-.girl-icon {
+.profile-photo,
+.about-photo {
+  display: block;
   width: 100%;
   height: 100%;
-}
-
-.girl-icon.large {
-  width: min(82%, 280px);
-  height: auto;
-}
-
-.icon-bg {
-  fill: #f6efd9;
-}
-
-.icon-hair-back {
-  fill: #273245;
-}
-
-.icon-neck {
-  fill: #eab08d;
-}
-
-.icon-face {
-  fill: #f6c7a8;
-}
-
-.icon-hair-front {
-  fill: #1c2637;
-}
-
-.icon-eye {
-  fill: #172033;
-}
-
-.icon-smile {
-  fill: none;
-  stroke: #172033;
-  stroke-width: 4;
-  stroke-linecap: round;
-}
-
-.icon-blazer {
-  fill: #2d5877;
-}
-
-.icon-shirt {
-  fill: #f7fbff;
-}
-
-.icon-laptop {
-  fill: #243244;
+  object-fit: cover;
+  object-position: center 18%;
 }
 
 .profile-label {
@@ -497,6 +455,7 @@ h3 {
   display: grid;
   place-items: center;
   min-height: 340px;
+  overflow: hidden;
   border: 1px solid rgba(232, 240, 255, 0.14);
   border-radius: 8px;
   background:
@@ -565,6 +524,14 @@ h3 {
 
 .quick-facts div:nth-child(3)::after {
   background: linear-gradient(90deg, var(--gold), transparent);
+}
+
+.quick-facts div:nth-child(4) {
+  border-left-color: var(--green);
+}
+
+.quick-facts div:nth-child(4)::after {
+  background: linear-gradient(90deg, var(--green), transparent);
 }
 
 .quick-facts span,
@@ -1038,6 +1005,11 @@ h3 {
   background: var(--paper);
 }
 
+.site-footer p {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
 @media (max-width: 900px) {
   .nav-toggle {
     display: block;
@@ -1151,11 +1123,18 @@ h3 {
     font-size: 1rem;
   }
 
+  .hero-meta {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
   .hero-meta a,
   .hero-meta span {
+    justify-content: center;
     min-height: 36px;
     max-width: 100%;
     padding: 0 11px;
+    overflow-wrap: anywhere;
   }
 
   .hero-actions,
